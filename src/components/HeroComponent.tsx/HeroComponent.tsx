@@ -6,7 +6,7 @@ export function VideoComponent() {
       <img
         src="/images/img-main-desktop.jpg"
         alt="Main Image"
-        className="justify-item-center"
+        className="justify-item-center w-100"
       />
       <div className="position-absolute top-50 start-50 translate-middle text-center text-white w-100">
         <h1 className="vidoe-header w-75 m-auto" style={{ fontSize: "100px" }}>

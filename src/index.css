@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --font-family: "DM Sans", sans-serif;
+  --font-family-second: "Montserrat", sans-serif;
+  --gradient-bg: linear-gradient(
+    90deg,
+    rgb(28, 27, 27) 0%,
+    rgb(26, 23, 23) 100%
+  );
+}
+
+body {
+  font-family: var(--font-family) !important;
+}

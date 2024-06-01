@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "name": "Bluza",
+    "price": 129.0,
+    "imageUrl": "/images/img-bluza.jpg",
+    "category": "Mężczyźni",
+    "isNewOrRecommended": true,
+    "type": ["Odzież Sportowa, Bestsellery, Marki, Zestawy"]
+  },
+  {
+    "id": 2,
+    "name": "Spodnie",
+    "price": 149,
+    "imageUrl": "/images/spodnie-dresowe.jpg",
+    "category": "Kobiety",
+    "isNewOrRecommended": false,
+    "type": ["Odzież"]
+  },
+  {
+    "id": 3,
+    "name": "Spodenki",
+    "price": 99,
+    "imageUrl": "/images/img-spodenki.jpg",
+    "category": "Kobiety",
+    "isNewOrRecommended": true,
+    "type": ["Odzież"]
+  },
+  {
+    "id": 4,
+    "name": "Buty",
+    "price": 349,
+    "imageUrl": "/images/img-buty.jpg",
+    "category": "Mężczyźni",
+    "isNewOrRecommended": true,
+    "type": ["Obuwie", "Bestsellery", "Marki"]
+  },
+  {
+    "id": 5,
+    "name": "Buty",
+    "price": 249,
+    "imageUrl": "/images/img-buty-2.jpg",
+    "category": "Kobiety",
+    "isNewOrRecommended": false,
+    "type": ["Obuwie", "Bestsellery", "Marki", "Wyprzedaż"]
+  },
+  {
+    "id": 6,
+    "name": "Podkoszulek",
+    "price": 79,
+    "imageUrl": "/images/img-koszulka-2.jpg",
+    "category": "Dziecka",
+    "isNewOrRecommended": true,
+    "type": ["Odzież", "Sezonowe"]
+  },
+  {
+    "id": 7,
+    "name": "Podkoszulek",
+    "price": 89,
+    "imageUrl": "/images/img-koszulka.jpg",
+    "category": "Kobiety",
+    "isNewOrRecommended": false,
+    "type": ["Odzież Sportowa", "Bestsellery"]
+  },
+  {
+    "id": 8,
+    "name": "Okulary",
+    "price": 199,
+    "imageUrl": "/images/img-okulary-2.jpg",
+    "category": "Mężczyźni",
+    "isNewOrRecommended": true,
+    "type": ["Akcesoria"]
+  },
+  {
+    "id": 9,
+    "name": "Podkoszulek",
+    "price": 99.99,
+    "imageUrl": "/images/img-koszulka-3.jpg",
+    "category": "Dziecka",
+    "isNewOrRecommended": true,
+    "type": ["Wyprzedaż", "Odzież"]
+  },
+  {
+    "id": 10,
+    "name": "Spodnie",
+    "price": 74.99,
+    "imageUrl": "/images/img-spodnie.jpg",
+    "category": "Mężczyźni",
+    "isNewOrRecommended": true,
+    "type": ["Odzież", "Wyprzedaż", "Outlet"]
+  },
+  {
+    "id": 11,
+    "name": "Kurtka",
+    "price": 249.99,
+    "imageUrl": "/images/img-kurtka.jpg",
+    "category": "Dziecka",
+    "isNewOrRecommended": true,
+    "type": ["Zestawy", "Bestsellery", "Marki", "Odzież Sportowa"]
+  }
+]

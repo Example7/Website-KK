@@ -1,0 +1,57 @@
+.pills-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100%;
+  width: 6rem;
+}
+
+.pills-icon-left {
+  left: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 0) 100%
+  ) !important;
+}
+
+.pills-icon-right {
+  right: 0;
+  background: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 0) 100%
+  ) !important;
+  display: flex;
+  justify-content: end;
+}
+
+.pills-icon button {
+  background-color: transparent !important;
+  color: black;
+  border: none !important;
+}
+
+.pills-icon button:hover {
+  background-color: transparent !important;
+  color: black !important;
+}
+
+.category-pill {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.category-pill:hover {
+  background-color: #5e6165 !important;
+}
+
+.category-pill.active-category:hover {
+  background-color: #343a40 !important;
+  cursor: default;
+}
+
+@media (max-width: 580px) {
+  .pills-icon {
+    width: 2rem;
+  }
+}

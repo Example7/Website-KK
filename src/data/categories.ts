@@ -1,0 +1,15 @@
+export const categories = [
+  "Wszystko",
+  "Odzież",
+  "Obuwie",
+  "Akcesoria",
+  "Bestsellery",
+  "Sezonowe",
+  "Marki",
+  "Odzież Sportowa",
+  "Wyprzedaż",
+  "Outlet",
+  "Zestawy",
+  "Sport",
+  "Kolekcje",
+];

@@ -1,0 +1,30 @@
+.custom-radio .form-check-input {
+  border-radius: 50%;
+  border: 1px solid #007bff;
+}
+
+.custom-radio .form-check-label {
+  cursor: pointer;
+  user-select: none;
+}
+
+.section-zwroty {
+  width: 50%;
+}
+
+@media (max-width: 1100px) {
+  .section-zwroty {
+    width: 75%;
+  }
+}
+
+@media (max-width: 920px) {
+  .section-zwroty {
+    width: 90%;
+    margin: auto;
+  }
+
+  .section-zwroty-btn {
+    width: 100%;
+  }
+}

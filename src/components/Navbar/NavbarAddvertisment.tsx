@@ -1,8 +1,9 @@
-import { Button, Container } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import "./Navbar.css";
 import { useLocalStorage } from "../../hooks/useLocalStrage";
+import { Link } from "react-router-dom";
 
 export function NavbarAddvertisement() {
   const [isAdvertisementClosed, setIsAdvertisementClosed] =
@@ -24,13 +25,13 @@ export function NavbarAddvertisement() {
           Podkręć na maksa swój letni styl.
         </div>
         <div>
-          <Button
-            variant="outline-primary text-nowrap"
-            size="sm"
-            onClick={handleCloseAdvertisement}
+          <Link
+            to="/kobiety"
+            className="px-3 py-1 text-decoration-none advert-btn fw-bold text-nowrap"
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           >
-            KUPUJ TERAZ
-          </Button>
+            Kupuj teraz
+          </Link>
         </div>
       </Container>
       <div

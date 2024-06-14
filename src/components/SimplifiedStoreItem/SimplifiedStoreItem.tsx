@@ -11,11 +11,6 @@ type SimplifiedStoreItemProps = {
   category: string;
 };
 
-const categoryToUrl: { [key: string]: string } = {
-  Dziecka: "dzieci",
-  Mężczyźni: "mezczyzni",
-};
-
 export function SimplifiedStoreItem({
   name,
   price,
@@ -23,7 +18,7 @@ export function SimplifiedStoreItem({
   isNewOrRecommended,
   category,
 }: SimplifiedStoreItemProps) {
-  const categoryUrl = categoryToUrl[category] || category.toLowerCase();
+  const categoryUrl = category.toLowerCase();
 
   const scrollToTop = () => {
     window.scrollTo(0, 0);

@@ -2,7 +2,7 @@ import { Button, Col, Container, Form, Row } from "react-bootstrap";
 import "./Footer.css";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
+import { faShop } from "@fortawesome/free-solid-svg-icons";
 import {
   faInstagram,
   faYoutube,
@@ -26,14 +26,14 @@ export function Footer() {
           <Form className="d-flex align-items-center justify-content-center mb-4">
             <Form.Group
               controlId="formBasicEmail"
-              className="d-flex w-100 form-group"
+              className="d-flex w-100 form-group mb-4"
             >
               <Form.Control
                 type="email"
                 placeholder="Wprowadź Email"
                 className="py-2 px-4 border border-dark form-input"
               />
-              <Button variant="primary" type="submit" className="form-button">
+              <Button variant="primary" type="button" className="form-button">
                 Wyślij
               </Button>
             </Form.Group>
@@ -76,11 +76,12 @@ export function Footer() {
         <section className="social-media pb-2">
           <div className="social-media-wrap pt-1">
             <div className="footer-logo">
-              <Link to="/" className="social-logo">
-                <FontAwesomeIcon
-                  icon={faCartShopping}
-                  className="footer-icon"
-                />
+              <Link
+                to="/"
+                className="social-logo"
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              >
+                <FontAwesomeIcon icon={faShop} className="footer-icon" />
                 SHOPI
               </Link>
             </div>
@@ -89,7 +90,6 @@ export function Footer() {
               <Link
                 className="social-icon-link facebook"
                 to="/"
-                target="_blank"
                 aria-label="Facebook"
               >
                 <FontAwesomeIcon icon={faFacebook} />
@@ -97,7 +97,6 @@ export function Footer() {
               <Link
                 className="social-icon-link instagram"
                 to="/"
-                target="_blank"
                 aria-label="Instagram"
               >
                 <FontAwesomeIcon icon={faInstagram} />
@@ -105,7 +104,6 @@ export function Footer() {
               <Link
                 className="social-icon-link youtube"
                 to="/"
-                target="_blank"
                 aria-label="Youtube"
               >
                 <FontAwesomeIcon icon={faYoutube} />
@@ -113,7 +111,6 @@ export function Footer() {
               <Link
                 className="social-icon-link twitter"
                 to="/"
-                target="_blank"
                 aria-label="Twitter"
               >
                 <FontAwesomeIcon icon={faTwitter} />
@@ -121,7 +118,6 @@ export function Footer() {
               <Link
                 className="social-icon-link linkedin"
                 to="/"
-                target="_blank"
                 aria-label="LinkedIn"
               >
                 <FontAwesomeIcon icon={faLinkedin} />

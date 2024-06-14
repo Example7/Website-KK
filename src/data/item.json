@@ -6,7 +6,9 @@
     "imageUrl": "/images/img-bluza.jpg",
     "category": "Mężczyźni",
     "isNewOrRecommended": true,
-    "type": ["Odzież Sportowa, Bestsellery, Marki, Zestawy"]
+    "type": ["Odzież Sportowa, Bestsellery, Marki, Zestawy"],
+    "date": "2023-01-15",
+    "popularity": 10
   },
   {
     "id": 2,
@@ -15,7 +17,9 @@
     "imageUrl": "/images/spodnie-dresowe.jpg",
     "category": "Kobiety",
     "isNewOrRecommended": false,
-    "type": ["Odzież"]
+    "type": ["Odzież"],
+    "date": "2023-04-12",
+    "popularity": 8
   },
   {
     "id": 3,
@@ -24,7 +28,9 @@
     "imageUrl": "/images/img-spodenki.jpg",
     "category": "Kobiety",
     "isNewOrRecommended": true,
-    "type": ["Odzież"]
+    "type": ["Odzież"],
+    "date": "2023-04-23",
+    "popularity": 6
   },
   {
     "id": 4,
@@ -33,7 +39,9 @@
     "imageUrl": "/images/img-buty.jpg",
     "category": "Mężczyźni",
     "isNewOrRecommended": true,
-    "type": ["Obuwie", "Bestsellery", "Marki"]
+    "type": ["Obuwie", "Bestsellery", "Marki", "Outlet"],
+    "date": "2023-05-02",
+    "popularity": 12
   },
   {
     "id": 5,
@@ -42,16 +50,20 @@
     "imageUrl": "/images/img-buty-2.jpg",
     "category": "Kobiety",
     "isNewOrRecommended": false,
-    "type": ["Obuwie", "Bestsellery", "Marki", "Wyprzedaż"]
+    "type": ["Obuwie", "Bestsellery", "Marki", "Wyprzedaż"],
+    "date": "2023-12-23",
+    "popularity": 4
   },
   {
     "id": 6,
     "name": "Podkoszulek",
     "price": 79,
     "imageUrl": "/images/img-koszulka-2.jpg",
-    "category": "Dziecka",
+    "category": "Dzieci",
     "isNewOrRecommended": true,
-    "type": ["Odzież", "Sezonowe"]
+    "type": ["Odzież", "Sezonowe", "Outlet"],
+    "date": "2024-02-02",
+    "popularity": 15
   },
   {
     "id": 7,
@@ -60,7 +72,9 @@
     "imageUrl": "/images/img-koszulka.jpg",
     "category": "Kobiety",
     "isNewOrRecommended": false,
-    "type": ["Odzież Sportowa", "Bestsellery"]
+    "type": ["Odzież Sportowa", "Bestsellery", "Outlet"],
+    "date": "2023-08-21",
+    "popularity": 7
   },
   {
     "id": 8,
@@ -69,16 +83,20 @@
     "imageUrl": "/images/img-okulary-2.jpg",
     "category": "Mężczyźni",
     "isNewOrRecommended": true,
-    "type": ["Akcesoria"]
+    "type": ["Akcesoria", "Outlet"],
+    "date": "2023-11-29",
+    "popularity": 2
   },
   {
     "id": 9,
     "name": "Podkoszulek",
     "price": 99.99,
     "imageUrl": "/images/img-koszulka-3.jpg",
-    "category": "Dziecka",
-    "isNewOrRecommended": true,
-    "type": ["Wyprzedaż", "Odzież"]
+    "category": "Dzieci",
+    "isNewOrRecommended": false,
+    "type": ["Wyprzedaż", "Odzież"],
+    "date": "2024-01-05",
+    "popularity": 9
   },
   {
     "id": 10,
@@ -86,16 +104,53 @@
     "price": 74.99,
     "imageUrl": "/images/img-spodnie.jpg",
     "category": "Mężczyźni",
-    "isNewOrRecommended": true,
-    "type": ["Odzież", "Wyprzedaż", "Outlet"]
+    "isNewOrRecommended": false,
+    "type": ["Odzież", "Wyprzedaż", "Outlet"],
+    "date": "2023-10-10",
+    "popularity": 4
   },
   {
     "id": 11,
     "name": "Kurtka",
     "price": 249.99,
     "imageUrl": "/images/img-kurtka.jpg",
-    "category": "Dziecka",
+    "category": "Dzieci",
     "isNewOrRecommended": true,
-    "type": ["Zestawy", "Bestsellery", "Marki", "Odzież Sportowa"]
+    "type": ["Zestawy", "Bestsellery", "Marki", "Odzież Sportowa"],
+    "date": "2023-05-22",
+    "popularity": 2
+  },
+  {
+    "id": 12,
+    "name": "Okulary",
+    "price": 179,
+    "imageUrl": "/images/img-okulary-2.jpg",
+    "category": "Kobiety",
+    "isNewOrRecommended": true,
+    "type": ["Akcesoria"],
+    "date": "2023-09-19",
+    "popularity": 2
+  },
+  {
+    "id": 5,
+    "name": "Buty",
+    "price": 149,
+    "imageUrl": "/images/img-buty-2.jpg",
+    "category": "Dzieci",
+    "isNewOrRecommended": false,
+    "type": ["Obuwie", "Bestsellery", "Marki"],
+    "date": "2024-03-21",
+    "popularity": 6
+  },
+  {
+    "id": 12,
+    "name": "Okulary",
+    "price": 99,
+    "imageUrl": "/images/img-okulary-2.jpg",
+    "category": "Dzieci",
+    "isNewOrRecommended": false,
+    "type": ["Akcesoria"],
+    "date": "2024-05-12",
+    "popularity": 1
   }
 ]

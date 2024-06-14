@@ -6,6 +6,7 @@ import {
   faUser,
   faBars,
   faMagnifyingGlass,
+  faShop,
 } from "@fortawesome/free-solid-svg-icons";
 import { useShoppingCart } from "../../context/ShoppingCartContext";
 import { useState } from "react";
@@ -14,61 +15,243 @@ import { Signup } from "../Signup";
 import "./Navbar.css";
 
 export function Navbar() {
+  const [showFlayout, setShowFlayout] = useState(false);
   const { openCart, cartQuantity } = useShoppingCart();
   const [isMobileNavbarOpen, setIsMobileNavbarOpen] = useState(false);
   const [isSignupOpen, setIsSignupOpen] = useState(false);
 
+  const toggleFlayout = () => setShowFlayout(true);
   const openMobileNavbar = () => setIsMobileNavbarOpen(true);
   const closeMobileNavbar = () => setIsMobileNavbarOpen(false);
-
   const openSignup = () => setIsSignupOpen(true);
   const closeSignup = () => setIsSignupOpen(false);
 
   return (
     <>
-      <NavbarBs
-        sticky="top"
-        className="shadow py-2 fw-bold navbar-main-container"
-      >
-        <Container className="navbar-container">
-          <Nav className="me-auto fs-5 d-flex align-items-center">
+      <NavbarBs className="shadow fw-bold navbar-main-container pt-0 justify-content-center">
+        <Container className="navbar-container py-1 mx-2 ">
+          <Nav className="me-auto fs-4 d-flex align-items-center">
             <Nav.Link
               to={"/"}
               as={NavLink}
-              className="d-flex align-items-center gap-1 text-white"
+              className="d-flex align-items-center gap-1 text-white py-2"
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             >
-              <FontAwesomeIcon icon={faCartShopping} className="fs-2" />
+              <FontAwesomeIcon icon={faShop} className="fs-2" />
               <div className="fs-2">SHOPI</div>
             </Nav.Link>
-            <Nav.Link
-              to={"/nowe_i_polecane"}
-              as={NavLink}
-              className="text-white text-nowrap d-none d-md-block"
+            {/* Mężczyźni */}
+            <div
+              className="text-white d-none d-md-block position-relative navbar-link"
+              onMouseEnter={toggleFlayout}
+              onMouseLeave={toggleFlayout}
             >
-              Nowe i polecane
-            </Nav.Link>
-            <Nav.Link
-              to={"/mezczyzni"}
-              as={NavLink}
-              className="text-white d-none d-md-block"
+              <NavLink
+                to={"/mężczyźni"}
+                className="text-decoration-none text-white p-3"
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              >
+                Mężczyźni
+              </NavLink>
+              {showFlayout && (
+                <div className="flayout">
+                  <div className="flayout-bridge"></div>
+                  <div className="flayout-square"></div>
+                  <div className="flayout-item">
+                    <NavLink
+                      to={"mężczyźni-nowe_i_polecane"}
+                      className="text-decoration-none text-white flayout-link fs-5"
+                      onClick={() =>
+                        window.scrollTo({ top: 0, behavior: "smooth" })
+                      }
+                    >
+                      Nowe i polecane
+                    </NavLink>
+                  </div>
+                  <div className="flayout-item">
+                    <NavLink
+                      to={"mężczyźni-buty"}
+                      className="text-decoration-none text-white flayout-link fs-5"
+                      onClick={() =>
+                        window.scrollTo({ top: 0, behavior: "smooth" })
+                      }
+                    >
+                      Buty
+                    </NavLink>
+                  </div>
+                  <div className="flayout-item">
+                    <NavLink
+                      to={"mężczyźni-odzież"}
+                      className="text-decoration-none text-white flayout-link fs-5"
+                      onClick={() =>
+                        window.scrollTo({ top: 0, behavior: "smooth" })
+                      }
+                    >
+                      Odzież
+                    </NavLink>
+                  </div>
+                  <div className="flayout-item">
+                    <NavLink
+                      to={"mężczyźni-akcesoria"}
+                      className="text-decoration-none text-white flayout-link fs-5"
+                      onClick={() =>
+                        window.scrollTo({ top: 0, behavior: "smooth" })
+                      }
+                    >
+                      Akcesoria
+                    </NavLink>
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Kobiety */}
+            <div
+              className="text-white d-none d-md-block position-relative navbar-link"
+              onMouseEnter={toggleFlayout}
+              onMouseLeave={toggleFlayout}
             >
-              Mężczyźni
-            </Nav.Link>
-            <Nav.Link
-              to={"/kobiety"}
-              as={NavLink}
-              className="text-white d-none d-md-block"
+              <NavLink
+                to={"/kobiety"}
+                className="text-decoration-none text-white p-3"
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              >
+                Kobiety
+              </NavLink>
+              {showFlayout && (
+                <div className="flayout">
+                  <div className="flayout-bridge"></div>
+                  <div className="flayout-square"></div>
+                  <div className="flayout-item">
+                    <NavLink
+                      to={"kobiety-nowe_i_polecane"}
+                      className="text-decoration-none text-white flayout-link fs-5"
+                      onClick={() =>
+                        window.scrollTo({ top: 0, behavior: "smooth" })
+                      }
+                    >
+                      Nowe i polecane
+                    </NavLink>
+                  </div>
+                  <div className="flayout-item">
+                    <NavLink
+                      to={"kobiety-buty"}
+                      className="text-decoration-none text-white flayout-link fs-5"
+                      onClick={() =>
+                        window.scrollTo({ top: 0, behavior: "smooth" })
+                      }
+                    >
+                      Buty
+                    </NavLink>
+                  </div>
+                  <div className="flayout-item">
+                    <NavLink
+                      to={"kobiety-odzież"}
+                      className="text-decoration-none text-white flayout-link fs-5"
+                      onClick={() =>
+                        window.scrollTo({ top: 0, behavior: "smooth" })
+                      }
+                    >
+                      Odzież
+                    </NavLink>
+                  </div>
+                  <div className="flayout-item">
+                    <NavLink
+                      to={"kobiety-akcesoria"}
+                      className="text-decoration-none text-white flayout-link fs-5"
+                      onClick={() =>
+                        window.scrollTo({ top: 0, behavior: "smooth" })
+                      }
+                    >
+                      Akcesoria
+                    </NavLink>
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Dzieci */}
+            <div
+              className="text-white d-none d-md-block position-relative navbar-link"
+              onMouseEnter={toggleFlayout}
+              onMouseLeave={toggleFlayout}
             >
-              Kobiety
-            </Nav.Link>
-            <Nav.Link
-              to={"/dzieci"}
-              as={NavLink}
-              className="text-white d-none d-md-block"
+              <NavLink
+                to={"/dzieci"}
+                className="text-decoration-none text-white p-3"
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              >
+                Dzieci
+              </NavLink>
+              {showFlayout && (
+                <div className="flayout">
+                  <div className="flayout-bridge"></div>
+                  <div className="flayout-square"></div>
+                  <div className="flayout-item">
+                    <NavLink
+                      to={"dzieci-nowe_i_polecane"}
+                      className="text-decoration-none text-white flayout-link fs-5"
+                      onClick={() =>
+                        window.scrollTo({ top: 0, behavior: "smooth" })
+                      }
+                    >
+                      Nowe i polecane
+                    </NavLink>
+                  </div>
+                  <div className="flayout-item">
+                    <NavLink
+                      to={"dzieci-buty"}
+                      className="text-decoration-none text-white flayout-link fs-5"
+                      onClick={() =>
+                        window.scrollTo({ top: 0, behavior: "smooth" })
+                      }
+                    >
+                      Buty
+                    </NavLink>
+                  </div>
+                  <div className="flayout-item">
+                    <NavLink
+                      to={"dzieci-odzież"}
+                      className="text-decoration-none text-white flayout-link fs-5"
+                      onClick={() =>
+                        window.scrollTo({ top: 0, behavior: "smooth" })
+                      }
+                    >
+                      Odzież
+                    </NavLink>
+                  </div>
+                  <div className="flayout-item">
+                    <NavLink
+                      to={"dzieci-akcesoria"}
+                      className="text-decoration-none text-white flayout-link fs-5"
+                      onClick={() =>
+                        window.scrollTo({ top: 0, behavior: "smooth" })
+                      }
+                    >
+                      Akcesoria
+                    </NavLink>
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Outlet */}
+            <div
+              className="text-white d-none d-md-block position-relative navbar-link"
+              onMouseEnter={toggleFlayout}
+              onMouseLeave={toggleFlayout}
             >
-              Dzieci
-            </Nav.Link>
+              <NavLink
+                to={"/outlet"}
+                className="text-decoration-none text-white p-3"
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              >
+                Outlet
+              </NavLink>
+            </div>
           </Nav>
+
+          {/* Przyciski i formularz wyszukiwania */}
           <div className="d-flex align-items-center justify-content-center mx-2 d-none d-xl-flex pe-3 nav-form-container p-1">
             <input
               type="search"
@@ -85,7 +268,7 @@ export function Navbar() {
               variant="outline-primary"
               className="rounded-circle d-md-block"
               style={{ width: "3rem", height: "3rem", position: "relative" }}
-              onClick={openSignup} // Open the signup component on click
+              onClick={openSignup}
             >
               <FontAwesomeIcon icon={faUser} />
             </Button>

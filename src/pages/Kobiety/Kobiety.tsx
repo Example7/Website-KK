@@ -1,4 +1,4 @@
-import { CategorySection } from "../components/CategorySection/CategorySection";
+import { CategorySection } from "../../components/CategorySection/CategorySection";
 
 export function Kobiety() {
   return (

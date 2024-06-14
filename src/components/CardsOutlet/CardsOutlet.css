@@ -1,0 +1,33 @@
+.outlet-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.overlay-text-2 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.outlet-cards-img {
+  opacity: 80%;
+}
+
+.outlet-cards-img:hover {
+  opacity: 100%;
+}

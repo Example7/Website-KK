@@ -1,0 +1,24 @@
+.custom-checkbox .form-check-input {
+  border-radius: 0 !important;
+  border: 1px solid #007bff;
+}
+
+.custom-checkbox .form-check-label {
+  cursor: pointer;
+  user-select: none;
+}
+
+.newsletter-img {
+  max-width: 880px;
+}
+
+@media (max-width: 920px) {
+  .newsletter-col-1 {
+    display: none;
+  }
+
+  .newsletter-col-2 {
+    width: 90% !important;
+    margin: auto;
+  }
+}

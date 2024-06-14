@@ -22,7 +22,7 @@ export function CartSection() {
   }, []);
 
   return (
-    <section className="bg-white pb-5">
+    <section className="bg-white pb-5" id="section-cart">
       <Container>
         <h1 className="fw-bold py-4 text-center cart-section-header">
           Sprawdź nasze niesamowite produkty!

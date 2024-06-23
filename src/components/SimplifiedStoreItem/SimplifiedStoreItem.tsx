@@ -38,10 +38,12 @@ export function SimplifiedStoreItem({
           </div>
         )}
         <Card.Body className="d-flex flex-column">
-          <Card.Title className="d-flex justify-content-between align-items-baseline mb-2">
+          <Card.Title className="d-flex justify-content-between align-items-baseline mb-0">
             <span className="fs-4 store-card-item">{name}</span>
+
             <span className="ms-2 text-muted">{formatCurrency(price)}</span>
           </Card.Title>
+          <div className="bg-white text-dark p-0">{category}</div>
         </Card.Body>
       </Card>
     </Link>

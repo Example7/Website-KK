@@ -44,7 +44,7 @@ export function HeroComponent({
             </Link>
           )}
           <Link
-            to="/kobiety"
+            to="/kobiety-outlet"
             className="px-5 py-2 my-2 fs-5 text-decoration-none video-btn"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           >

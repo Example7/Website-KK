@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import storeItems from "../data/item.json";
 import { SimplifiedStoreItem } from "./SimplifiedStoreItem/SimplifiedStoreItem";
 import { CategoryPills } from "./CategoryPills/CategoryPills";
 import { categories } from "../data/categories";
+import storeItems from "../data/item.json";
 
 export function CartSection() {
   const [maxItemsToShow, setMaxItemsToShow] = useState(

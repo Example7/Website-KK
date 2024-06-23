@@ -84,7 +84,7 @@ export function CategoryPills({
             key={category}
             onClick={() => onSelect(category)}
           >
-            {category === "NoweIPolecane" ? "Nowe i polecane" : category}
+            {category}
           </Button>
         ))}
       </div>

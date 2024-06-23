@@ -1,6 +1,6 @@
 import { Advertisement } from "../../components/Advertisement";
 import { CardsOutlet } from "../../components/CardsOutlet/CardsOutlet";
-import { CardsOutletDiscount } from "../../components/CardsOutletDiscount";
+import { CardsOutletDiscount } from "../../components/CardsOutlet/CardsOutletDiscount";
 import { HeroComponent } from "../../components/HeroComponent.tsx/HeroComponent";
 
 export function Outlet() {

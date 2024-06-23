@@ -38,38 +38,30 @@ export function StoreItem({ id, name, price, imageUrl }: StoreItemProps) {
           <div className="mt-auto">
             {quantity === 0 ? (
               <Button
-                className="w-100"
+                className="w-100 rounded-0"
                 onClick={() => increaseCartQuantity(id)}
               >
-                + Dodaj do Koszyka
+                Dodaj do Koszyka
               </Button>
             ) : (
-              <div
-                className="d-flex align-items-center flex-column"
-                style={{ gap: ".5rem" }}
-              >
-                <div
-                  className="d-flex align-items-center justify-content-center"
-                  style={{ gap: ".5rem" }}
+              <div className="d-flex align-items-center justify-content-between w-100">
+                <Button
+                  className="px-1 py-0 rounded-0"
+                  onClick={() => decreaseCartQuantity(id)}
                 >
-                  <Button
-                    className="px-1 py-0"
-                    onClick={() => decreaseCartQuantity(id)}
-                  >
-                    <FontAwesomeIcon icon={faMinus} />
-                  </Button>
-                  <div>
-                    <span className="fs-3">{quantity + " "}</span>w koszyku
-                  </div>
-                  <Button
-                    className="px-1 py-0"
-                    onClick={() => increaseCartQuantity(id)}
-                  >
-                    <FontAwesomeIcon icon={faPlus} />
-                  </Button>
+                  <FontAwesomeIcon icon={faMinus} />
+                </Button>
+                <div>
+                  <span className="fs-3">{quantity + " "}</span>w koszyku
                 </div>
                 <Button
-                  className="w-100"
+                  className="px-1 py-0 rounded-0"
+                  onClick={() => increaseCartQuantity(id)}
+                >
+                  <FontAwesomeIcon icon={faPlus} />
+                </Button>
+                <Button
+                  className="w-25 rounded-0"
                   variant="danger"
                   size="sm"
                   onClick={() => removeFromCart(id)}

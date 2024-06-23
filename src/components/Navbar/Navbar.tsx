@@ -104,7 +104,6 @@ export function Navbar() {
                 </div>
               )}
             </div>
-
             {/* Kobiety */}
             <div
               className="text-white d-none d-md-block position-relative navbar-link"
@@ -169,7 +168,6 @@ export function Navbar() {
                 </div>
               )}
             </div>
-
             {/* Dzieci */}
             <div
               className="text-white d-none d-md-block position-relative navbar-link"
@@ -234,7 +232,6 @@ export function Navbar() {
                 </div>
               )}
             </div>
-
             {/* Outlet */}
             <div
               className="text-white d-none d-md-block position-relative navbar-link"
@@ -250,7 +247,6 @@ export function Navbar() {
               </NavLink>
             </div>
           </Nav>
-
           {/* Przyciski i formularz wyszukiwania */}
           <div className="d-flex align-items-center justify-content-center mx-2 d-none d-xl-flex pe-3 nav-form-container p-1">
             <input
